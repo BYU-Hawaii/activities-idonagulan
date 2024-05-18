@@ -1,0 +1,9 @@
+
+        
+body {background-color:rgba(169, 102, 185, 0.329);margin: 0 auto; max-width: 800px ;}
+.label {background-color:rgb(136, 236, 243); text-align: center;}
+#center {text-align: center}
+#pinkmoon {color:blueviolet; text-align: center}
+#borders {width: 100%; border: 5px solid palevioletred}
+
+
