@@ -1,9 +1,16 @@
 
-        
+/*This changes the font*/
+h1 {font-family: "Jacquard 12", system-ui; font-weight: 300; font-style: normal;}
+/*this changes the style of entire body and background color and also adding margin*/        
 body {background-color:rgba(169, 102, 185, 0.329);margin: 0 auto; max-width: 800px ;}
+/*this class changes the color and align it to center*/
 .label {background-color:rgb(136, 236, 243); text-align: center;}
+ /*this makes every id with the center, to align them in the center*/
 #center {text-align: center}
+/*this id makes it with the color and align it with center*/
 #pinkmoon {color:blueviolet; text-align: center}
+ /*this id gives a border and a color*/
 #borders {width: 100%; border: 5px solid palevioletred}
-
+/*this adds border and color to the paragraph*/
+p {border: 8px solid rgb(136, 236, 243); padding: 10px ;color:blueviolet; }
 
