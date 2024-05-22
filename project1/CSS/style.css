@@ -1,0 +1,9 @@
+
+body {background-image: url("/activities-idonagulan/project1/pic/grass.jpg");}
+.label {background-color:rgb(136, 243, 145); text-align: center;}
+#phome {background-color:rgb(212, 204, 93); border: 8px solid rgb(136, 243, 145); padding: 10px ; text-align: center}
+#pichome { border: 5px solid rgb(88, 184, 112)}
+
+#plight {background-color:rgb(112, 204, 228); border: 8px solid rgb(136, 243, 145); padding: 10px ; text-align: center}
+#padslight {border: 8px solid rgb(136, 243, 145); padding: 10px ;}
+#border { border: 5px solid rgb(50, 48, 202)}
