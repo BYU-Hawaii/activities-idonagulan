@@ -1,0 +1,99 @@
+/* Reset some default browser styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the header */
+header {
+    background-color: #6e0707;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styling the navigation bar */
+nav {
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {   
+    position: relative; /* For dropdown positioning */
+}
+
+a {
+    display: block;
+    padding: 20px 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Hover effects */
+a:hover {
+    background-color: #6e0707;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #7a1616;
+}
+
+nav ul li:hover ul {
+    display: inline-block;
+}
+
+nav ul li ul li a {
+    color: white;
+    padding: 10px 15px;
+    width: 200px;
+}
+
+
+section {
+    padding: 20px;
+}
+
+/* Two-column layout using Flexbox */
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add some space between columns */
+}
+
+.column {
+    width: 48%; /* Adjusted to fit within the container */
+}
+
+/* Floated image with wrapping text */
+.image-float img {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 500px;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #6e0707;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

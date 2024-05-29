@@ -1,0 +1,53 @@
+/* Reset some default browser styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Styling the navigation bar */
+nav {
+    background-color: #8d71d8;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    position: relative; /* For dropdown positioning */
+}
+
+a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+/* Hover effects */
+a:hover {
+    background-color: #6eecd7;
+}
+
+/* Dropdown menu styling */
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #a75fa3;
+    
+}
+
+nav ul li:hover ul {
+    display: inline-block;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    width: 200px;
+}
