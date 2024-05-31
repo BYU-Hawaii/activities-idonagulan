@@ -1,4 +1,33 @@
 
+container {
+    grid-template-areas:
+       "header header header"
+       "sidebar main main"
+       "footer footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(123, 255, 0);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: blue;
+}
+
+.content{
+    grid-area: content;
+    background-color: blue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: blue;
+}
+
+
+
 .grid-item {
     background-color: #4CAF50;
     padding: 20px;
@@ -32,3 +61,4 @@
 #item4 {
     grid-column: 1/4; 
 }
+
