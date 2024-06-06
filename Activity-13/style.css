@@ -55,6 +55,7 @@ footer {
   }
 
   .container {
+    display: grid;
     grid-template-columns: 1fr 1fr; /* 2 columns for tablets */
     grid-template-areas:
       "welcome feature";
@@ -68,6 +69,7 @@ footer {
   }
 
   .container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* 3 columns for larger desktop screens */
     grid-template-areas:
       "welcome feature contact";
