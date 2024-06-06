@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 14px; /* Base font size for mobile */
+  font-size: 18px; /* Base font size for mobile */
 }
 
 header, nav, main, footer {
@@ -45,35 +45,10 @@ footer {
 .container {
   display: grid;
   grid-template-columns: 1fr; /* Default: 1 column */
-  gap: 20px; /* Gap between grid items */
-}
-
-/* Tablet and Small Laptop Styles */
-@media (min-width: 768px) {
-  body {
-    font-size: 16px; /* Increase font size for tablets */
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns for tablets */
-    grid-template-areas:
-      "welcome feature";
-  }
-}
-
-/* Larger Desktop Screen Styles */
-@media (min-width: 1024px) {
-  body {
-    font-size: 18px; /* Further increase font size for larger desktop screens */
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columns for larger desktop screens */
-    grid-template-areas:
-      "welcome feature contact";
-  }
+  grid-template-areas:
+      "welcome"
+      "feature"
+      "contact";
 }
 
 /* Grid Area Assignments */
@@ -88,3 +63,31 @@ footer {
 #contact {
   grid-area: contact;
 }
+
+/* Tablet and Small Laptop Styles */
+@media (min-width: 768px) {
+  body {
+    font-size: 20px; /* Increase font size for tablets */
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr; /* 2 columns for tablets */
+    grid-template-areas:
+      "welcome feature"
+      "contact";
+  }
+}
+
+/* Larger Desktop Screen Styles */
+@media (min-width: 1024px) {
+  body {
+    font-size: 24px; /* Further increase font size for larger desktop screens */
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns for larger desktop screens */
+    grid-template-areas:
+      "welcome feature contact";
+  }
+}
+
