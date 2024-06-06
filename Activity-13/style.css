@@ -71,7 +71,7 @@ footer {
   }
 
   .container {
-    grid-template-columns: 1fr 1fr; /* 2 columns for tablets */
+    grid-template-columns: 1fr 1fr 1fr; /* 2 columns for tablets */
     grid-template-areas:
       "welcome feature"
       "contact";
