@@ -82,16 +82,11 @@ body {
             "header"
             "main-content"
             "footer";
-       
     }
 
     .nav ul {
         display: flex;
         justify-content: space-around;
-        
-    }
-
-    .nav ul li {
         
     }
 
