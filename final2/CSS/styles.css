@@ -112,6 +112,7 @@ body {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    resize: vertical;
 }
 
 .feedback-form button {
@@ -126,6 +127,42 @@ body {
 .feedback-form button:hover {
     background-color: #002f20;
 }
+
+/* Animals Information Section */
+.animals-info {
+    margin-top: 20px;
+}
+
+.animals-info h2 {
+    color: #333;
+    font-size: 1.8em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.animals-info article {
+    margin-bottom: 20px;
+}
+
+.animals-info article h3 {
+    background-color: #a9c52f;
+    color: #444;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.animals-info article h4 {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.animals-info article p {
+    margin-bottom: 15px;
+}
+
 
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
