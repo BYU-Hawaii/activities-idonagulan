@@ -1,0 +1,164 @@
+/* Basic styles */
+body {
+    background-color: #a9c52f;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main-content"
+        "footer";
+    grid-gap: 10px;
+    padding: 10px;
+    width: 800px;
+    height: 600px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #c5d86d;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #c5d86d;
+    
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+    background-color: #c5d86d;
+}
+
+.footer {
+    grid-area: footer;
+    background-color:  #c5d86d;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive navigation bar */
+.nav ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav ul li a:hover {
+    background-color:#004a2f ;
+    color: white;
+}
+
+/* Flexbox gallery */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 100%;
+}
+
+/* Additional styles for feedback form */
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.feedback-form h2 {
+    text-align: center;
+    color: #004a2f;
+}
+
+.feedback-form form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.feedback-form label {
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #004a2f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #002f20;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main-content"
+            "footer";
+       
+    }
+
+    .nav ul {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .gallery-container img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #a9c52f;
+        width: auto; /* Make the container full-width */
+        background-image: url(/activities-idonagulan/Final1/image/background.jpg); /* Replace with your image URL */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+    }
+    .gallery-container img {
+        width: calc(33.33% - 10px);
+    }
+}

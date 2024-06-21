@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia</title>
+    <link rel="stylesheet" href="/activities-idonagulan/Final2/CSS/styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <h1>Zoo Fun Day</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="/activities-idonagulan/Final1/index.html">Home</a></li>
+                <li><a href="/activities-idonagulan/Final1/about.html">About</a></li>
+                <li><a href="#services">Game</a></li>
+                <li><a href="#contact">Fun Facts</a></li>
+                <li><a href="#contact">Feedback</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div class="feedback-form">
+                <h2>Feedback Form</h2>
+                <form id="feedbackForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select rating</option>
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="3">3 - Good</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                    
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                    
+                    <button type="submit">Submit Feedback</button>
+                    <div id="feedbackMessage"></div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Animal Wonders!</p>
+        </footer>
+    </div>
+    <script src="/activities-idonagulan/final2/script.js" defer></script>
+</body>
+</html>
