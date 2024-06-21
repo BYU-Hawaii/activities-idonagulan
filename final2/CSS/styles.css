@@ -193,7 +193,6 @@ body {
         background-image: url(/activities-idonagulan/Final1/image/background.jpg); /* Replace with your image URL */
         background-size: cover; /* Cover the entire container */
         background-position: center; /* Center the background image */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
     }
     .gallery-container img {
         width: calc(33.33% - 10px);
