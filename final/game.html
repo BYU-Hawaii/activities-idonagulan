@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia Animals Information</title>
+    <link rel="stylesheet" href="/activities-idonagulan/final/CSS/styles.css">
+    <script src="https://kit.fontawesome.com/5a742584d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <h1>Zoo Fun Day</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="/activities-idonagulan/final/index.html">Home</a></li>
+                <li><a href="/activities-idonagulan/final/about.html">About</a></li>
+                <li><a href="/activities-idonagulan/final/game.html">Game</a></li>
+                <li><a href="/activities-idonagulan/final/fact.html">Fun Facts</a></li>
+                <li><a href="/activities-idonagulan/final/feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section id="game" class="game-section">
+                <h2>Guess the Animal!</h2>
+                <p id="description"></p>
+                <p id="hint2"></p>
+                <p id="letters"></p>
+                <input type="text" id="guessInput" placeholder="Enter your guess">
+                <div class="guess-button">
+                    <button onclick="checkGuess()">Guess</button>
+                </div>
+                <div class="buttons-container">
+                    <div class="tooltip">
+                        <button onclick="showHint1()">Hint 1</button>
+                        <span class="tooltiptext">Reveals a random letter of the animal's name</span>
+                    </div>
+                    <div class="tooltip">
+                        <button onclick="showHint2()">Hint 2</button>
+                        <span class="tooltiptext">Shows an image of the animal</span>
+                    </div>
+                    <div class="tootip">
+                        <button onclick="playAgain()">Play Again</button>
+                    </div>
+                </div>
+                <p id="hint1"></p>
+                <p id="result"></p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Animal Wonders!</p>
+        </footer>
+    </div>
+    <script src="/activities-idonagulan/final/JAVA/game.js"></script>
+</body>
+</html>
